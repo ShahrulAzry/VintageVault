@@ -6,11 +6,6 @@ h1{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
 }
 
 #myVideo {
@@ -47,7 +42,7 @@ h1{
   .sidebar a {
     padding: 8px 8px 8px 32px;
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 2px 2px red;
+    text-shadow: 2px 2px black;
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
@@ -55,10 +50,15 @@ h1{
     display: block;
     transition: 0.3s;
   }
+
+  .sidebar a img{
+    height:200px;
+    width: 200px;
+  }
   
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
-    color: black;
+    color: red;
   }
   
   /* Position and style the close button (top right corner) */
@@ -79,11 +79,11 @@ h1{
     padding: 10px 15px;
     border: none;
   }
-  
+
   .openbtn:hover {
-    background-color: #444;
+    background-color: red;
   }
-  
+
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s; /* If you want a transition effect */
