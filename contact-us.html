@@ -36,8 +36,103 @@
           <h1>Contact Us!</h1>
          </div>
 
+<!-- Add the contact form -->
+<h1>Contact Us</h1>
+<form id="contact-form" action="submit-form.php" method="POST">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name.." required>
+  <div class="error-message" id="name-error"></div>
 
-        <script src="script.js"></script>
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email" placeholder="Your email.." required>
+  <div class="error-message" id="email-error"></div>
+
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+  <div class="error-message" id="subject-error"></div>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+  <div class="error-message" id="message-error"></div>
+
+  <button type="submit" id="submit-button">Submit</button>
+  <div class="success-message" id="success-message" style="display:none;">Thank you for contacting us!</div>
+</form>
+
+<!-- Add JavaScript to validate the form and handle form submission -->
+<script>
+  // Get references to the form and form elements
+  const form = document.getElementById("contact-form");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const subjectInput = document.getElementById("subject");
+  const messageInput = document.getElementById("message");
+  const submitButton = document.getElementById("submit-button");
+  const successMessage = document.getElementById("success-message");
+
+  // Add an event listener to the form submit button
+  form.addEventListener("submit", (event) => {
+    // Prevent the form from submitting
+    event.preventDefault();
+
+    // Clear any existing error messages
+    clearErrors();
+
+    // Validate the form inputs
+    let isValid = true;
+
+    if (nameInput.value.trim() === "") {
+      showErrorMessage(nameInput, "Please enter your name");
+      isValid = false;
+    }
+
+    if (emailInput.value.trim() === "") {
+      showErrorMessage(emailInput, "Please enter your email address");
+      isValid = false;
+    } else if (!isValidEmail(emailInput.value)) {
+      showErrorMessage(emailInput, "Please enter a valid email address");
+      isValid = false;
+    }
+
+    if (subjectInput.value.trim() === "") {
+      showErrorMessage(subjectInput, "Please enter a subject");
+      isValid = false;
+    }
+
+    if (messageInput.value.trim() === "") {
+      showErrorMessage(messageInput, "Please enter a message");
+      isValid = false;
+    }
+
+    // If the form is valid, submit it and show the success message
+    if (isValid) {
+      form.submit();
+      successMessage.style.display = "block";
+    }
+  });
+
+  // Define a function to clear all error messages
+  function clearErrors() {
+    const errorMessages = document.querySelectorAll(".error-message");
+    errorMessages.forEach((errorMessage) => {
+      errorMessage.textContent = "";
+    });
+  }
+
+  // Define a function to show an error message for a specific input field
+  function showErrorMessage(input, message) {
+    const errorMessage = input.nextElementSibling;
+    errorMessage.textContent = message;
+  }
+
+  // Define a function to check if an email address is valid
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+</script>
+
+        
 
     </body>
 
