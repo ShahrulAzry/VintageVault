@@ -1,13 +1,9 @@
+/* Set everything to black */
 html{
     background-color: black;
 }
 
-h1{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    color: white;
-}
-
+/* Styling for video bg in index.html */
 #myVideo {
     position: fixed;
     right: 0;
@@ -94,4 +90,29 @@ h1{
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+  }
+
+  /* Styling for heading1 */
+  .container h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+  }
+
+
+
+  /*AppShowcase*/
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container img {
+    margin-right: 20px;
+  }
+  
+  .text {
+    font-size: 18px;
+    color: white;
   }

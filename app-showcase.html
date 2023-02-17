@@ -12,7 +12,29 @@
         <link rel="stylesheet" href="style.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-          </style>
+            
+            h1{
+              text-align: center;
+              color: white;
+              font-size: 35px;
+			        font-weight: bold;
+			        margin-bottom: 20px;
+            }
+
+            .para {
+              margin: 50px auto;
+              max-width: 600px;
+            }
+            
+            .text {
+              font-size: 18px;
+              max-width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+                    
+            }
+            
+        </style>
     </head>
 
 
@@ -31,23 +53,17 @@
             <button class="openbtn" onclick="openNav()">&#9776; </button>
         </div>
 
-        <video autoplay muted loop id="myVideo">
-            <source src="media/video-bg.mp4" type="video/mp4">
-        </video>
+        <h1>1. Login Page</h1>
+        <div class="para">
+          <p class="text">To log in to VintageVault, simply enter your email address and password in the designated fields and click the "Log In" button. If you don't yet have an account, you can click the "Sign Up" button to create one. We can't wait to have you as a part of our thrifty community!</p>
+        </div>
 
-        <script>
-            function openNav() {
-              document.getElementById("mySidebar").style.width = "500px";
-              document.getElementById("main").style.marginLeft = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidebar").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-            }
-        </script>
+        <h1>2. Intro Page</h1>
+        <div class="para">
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo sem sed sagittis volutpat. Fusce in lacus vel purus bibendum commodo. Aliquam erat volutpat. In hac habitasse platea dictumst. Pellentesque et magna in libero ullamcorper mollis. Integer euismod fermentum elit, non venenatis elit faucibus vel. Quisque ultrices, felis sit amet fringilla bibendum, augue justo tincidunt nunc, ac accumsan turpis enim sed velit.</p>
+        </div>
 
-        
+        <script src="script.js"></script>
 
         
 
