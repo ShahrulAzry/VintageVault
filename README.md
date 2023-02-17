@@ -13,6 +13,6 @@ Get in touch via a form.<br>
 <p> HTML, CSS, and JavaScript for the frontend </p>
 
 <h2> Individual Contributions: </h2>
-<p>Shahrul (Frontend Developer, API Developer) - Find Us (Where Are We) Page<br> About Us (What Are We) Page
+<p>Shahrul (Frontend Developer, API Developer) - Find Us (Where Are We) Page About Us (What Are We) Page<br>
 Sufi (Frontend Developer) - App Showcase Page, Contact Us (Get In Touch) Page
 </p>
