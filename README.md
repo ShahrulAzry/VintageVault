@@ -4,15 +4,15 @@
 
 <h2>Features:</h2>
 <p>Locate where we are via Google Maps API.<br>
-Read more about us.
-Look at our mobile app showcase.
-Get in touch via a form.
+Read more about us.<br>
+Look at our mobile app showcase.<br>
+Get in touch via a form.<br>
 </p>
 
 <h2> Technologies Used: </h2>
 <p> HTML, CSS, and JavaScript for the frontend </p>
 
 <h2> Individual Contributions: </h2>
-<p>Shahrul (Frontend Developer, API Developer) - Find Us (Where Are We) Page, About Us (What Are We) Page
+<p>Shahrul (Frontend Developer, API Developer) - Find Us (Where Are We) Page<br> About Us (What Are We) Page
 Sufi (Frontend Developer) - App Showcase Page, Contact Us (Get In Touch) Page
 </p>
