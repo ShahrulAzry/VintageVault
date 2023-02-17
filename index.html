@@ -13,9 +13,9 @@
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
         </style>
-        <script src="script.js"></script>
+        <script src="script.js"></script>  
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+        
     </head>
 
 
@@ -24,7 +24,7 @@
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html"><img src="media/nav-logo.svg"></a>
-            <a href="app-showcase.html" class="nav-button">App Showcase</a>
+            <a href="app-showcase.html" class="nav-button" onclick="playAnimation()">App Showcase</a>
             <a href="contact-us.html" class="nav-button">Get In Touch</a>
             <a href="about-us.html" class="nav-button">What Are We</a>
             <a href="find-us.html" class="nav-button">Where Are We</a>
@@ -39,11 +39,16 @@
             <img src="media/logo.svg" alt="Logo">
         </div>
 
-        <video autoplay muted loop id="myVideo">
+        <video autoplay loop id="myVideo">
             <source src="media/video-bg.mp4" type="video/mp4">
         </video>
 
-    
+        <div class="lottie-container">
+            <lottie-player src="https://assets1.lottiefiles.com/temp/lf20_fw4v8s.json"  background="transparent"  speed="0.5"  style="width: 400px; height: 400px;" autoplay loop></lottie-player>
+        </div>
+
+       
+
     </body>
 
 </html>

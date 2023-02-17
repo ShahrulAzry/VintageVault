@@ -9,6 +9,7 @@ function openNav() {
               document.getElementById("main").style.marginLeft= "0";
 }
 
+
 // Initialize and add the map
 function initMap() {
   // The location 

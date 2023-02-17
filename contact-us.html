@@ -31,13 +31,17 @@
         <div id="main">
             <button class="openbtn" onclick="openNav()">&#9776; </button>
         </div>
+
+        <video autoplay muted id="myVideo">
+          <source src="media/video-bg.mp4" type="video/mp4">
+        </video>
         
         <div class="contact-us">
           <h1>Contact Us!</h1>
          </div>
 
 <!-- Add the contact form -->
-<h1>Contact Us</h1>
+
 <form id="contact-form" action="submit-form.php" method="POST">
   <label for="name">Name</label>
   <input type="text" id="name" name="name" placeholder="Your name.." required>
