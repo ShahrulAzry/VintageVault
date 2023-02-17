@@ -3,6 +3,12 @@ html{
     background-color: black;
 }
 
+/* Map in Find Us page */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+
 /* Styling for video bg in index.html */
 #myVideo {
     position: fixed;
@@ -101,8 +107,7 @@ html{
 
 
 
-  /*AppShowcase*/
-
+  /*App Showcase*/
   .container {
     display: flex;
     align-items: center;
@@ -116,3 +121,28 @@ html{
     font-size: 18px;
     color: white;
   }
+
+
+
+  /* Find Us (Where Are We) */
+  .find-us h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  /* Contact Us (Get In Touch) */
+  .contact-us h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+  }
+
+
+
+
+
+
+ 

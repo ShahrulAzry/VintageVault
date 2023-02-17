@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
             
@@ -19,11 +20,25 @@
               font-size: 35px;
 			        font-weight: bold;
 			        margin-bottom: 20px;
+              font-family: 'Montserrat', sans-serif;
+              
             }
+
+            @keyframes float {
+              0% { transform: translate(0, 0); }
+              50% { transform: translate(0, 10px); }
+              100% { transform: translate(0, -10px); }
+            }
+
+            h1:hover {
+              animation: float 2s ease-in-out infinite;
+            }
+            
 
             .para {
               margin: 50px auto;
               max-width: 600px;
+              font-family: 'Montserrat', sans-serif;
             }
             
             .text {
@@ -31,9 +46,24 @@
               max-width: 100%;
               margin-left: auto;
               margin-right: auto;
+              font-family: 'Montserrat', sans-serif;
                     
             }
+
+            #loginpage {
+              display: block;
+              margin: 0 auto;
+              width: 50px;
+              height: 50px;
+              height: auto;
+            }
             
+          
+            img {
+              display: block;
+              margin: auto;
+              border: 10px solid white;
+            }
         </style>
     </head>
 
@@ -53,14 +83,29 @@
             <button class="openbtn" onclick="openNav()">&#9776; </button>
         </div>
 
+        
+        
+       
         <h1>1. Login Page</h1>
+        <img src="media/login-page.jpg" alt="Logo" width="300" height="500" class="showcase">
         <div class="para">
           <p class="text">To log in to VintageVault, simply enter your email address and password in the designated fields and click the "Log In" button. If you don't yet have an account, you can click the "Sign Up" button to create one. We can't wait to have you as a part of our thrifty community!</p>
         </div>
 
         <h1>2. Intro Page</h1>
+        <img src="media/intro-page.jpg" alt="Logo" width="300" height="500" >
         <div class="para">
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi commodo sem sed sagittis volutpat. Fusce in lacus vel purus bibendum commodo. Aliquam erat volutpat. In hac habitasse platea dictumst. Pellentesque et magna in libero ullamcorper mollis. Integer euismod fermentum elit, non venenatis elit faucibus vel. Quisque ultrices, felis sit amet fringilla bibendum, augue justo tincidunt nunc, ac accumsan turpis enim sed velit.</p>
+          <p class="text">This will be the intro page as you know what we are selling on our app. You can either press the Reward button to see how to can earn rewards or press the Home button to list more products.</p>
+        </div>
+
+        <h1>3. Product Page</h1>
+        <div class="para">
+          <p class="text">This will be the intro page as you know what we are selling on our app. You can either press the Reward button to see how to can earn rewards or press the Home button to list more products.</p>
+        </div>
+
+        <h1>4. Reward Page</h1>
+        <div class="para">
+          <p class="text">This will be the intro page as you know what we are selling on our app. You can either press the Reward button to see how to can earn rewards or press the Home button to list more products.</p>
         </div>
 
         <script src="script.js"></script>

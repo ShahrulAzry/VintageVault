@@ -11,8 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
         </style>
+        <script src="script.js"></script>
+
     </head>
 
 
@@ -21,10 +23,10 @@
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html"><img src="media/nav-logo.svg"></a>
-            <a href="app-showcase.html">App Showcase</a>
-            <a href="contact-us.html">Get In Touch</a>
-            <a href="about-us.html">What Are We</a>
-            <a href="find-us.html">Where Are We</a>
+            <a href="app-showcase.html" class="nav-button">App Showcase</a>
+            <a href="contact-us.html" class="nav-button">Get In Touch</a>
+            <a href="about-us.html" class="nav-button">What Are We</a>
+            <a href="find-us.html" class="nav-button">Where Are We</a>
           </div>
           
         <div id="main">
@@ -39,6 +41,11 @@
         <video autoplay muted loop id="myVideo">
             <source src="media/video-bg.mp4" type="video/mp4">
         </video>
+
+        <div id="lottie-animation">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_mnbhbf9n.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+        </div>
+
 
         <script src="script.js"></script>
 
